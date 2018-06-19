@@ -1,0 +1,7 @@
+The Respository contains the R & Python Code for Linear Regression Model.
+The File used is placed in the folder.Open the R/Python Code with the directory setup correclty and you should be able to execute the code.
+
+The R Code is more advanced in the sense it has repitition of steps which are actually required for the Linear Regression Model. 
+
+The Python Code on the other hand implements only the required steps for building the model, as I have already learnt about the data 
+beforehand using R Code. However, i have tried to bring in the code for all necessary steps in Python too.
