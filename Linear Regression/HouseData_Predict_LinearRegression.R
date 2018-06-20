@@ -1,4 +1,4 @@
-setwd("C:/Users/Anshul.Roy/Desktop/Personal/Study/Data Science - bkp done/Learning from Start - R Code - Data Science/Linear Regression Practice Datasets/HousePrice_Prediction_Linear Regresion")
+setwd("C:/Users/Anshul.Roy/Desktop/Personal/Linear Regression Datasets/HousePrice_Prediction_Linear Regresion")
 library(corrplot)
 library(leaps)
 library(ggplot2)
@@ -70,6 +70,11 @@ sub.fit = regsubsets(price ~ bedrooms + bathrooms + sqft_living + sqft_lot +
 best.summary <- summary(sub.fit)
 names(best.summary)
 which.min(best.summary$rss) #This suggest that Model with 8 Features have smalles RSS.
+
+
+#Additional Code just for further evaluation. Many evaluation technique exists and evaluation of the model can be done in many ways. 
+#The below is one check.
+
 #THe below functions are from leaps and are used to find Mallow's Cp. 
 par(mfrow=c(1,2))
 plot(best.summary$cp, xlab="number of features", ylab="cp")
